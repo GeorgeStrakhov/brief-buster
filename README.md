@@ -2,6 +2,10 @@
 
 Type in the basics if your brief and the tool will generate a ToDo list for you to start digging
 
+[https://briefbuster.georgestrakhov.com](https://briefbuster.georgestrakhov.com)
+
+`npm run deploy` to deploy to gh-pages
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

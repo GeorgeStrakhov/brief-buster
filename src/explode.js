@@ -19,7 +19,7 @@ class Explode extends React.Component {
           <div className="column is-half">
             <div className="container m-4 p-1">
               <p className="title has-text-centered mt-5">
-                Strategy Explosion ToDo List
+                Brief Buster ToDo List
               </p>
               <div className="widgetContainer content">
                 <Suggestions brief={this.state.brief} />

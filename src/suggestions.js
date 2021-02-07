@@ -23,6 +23,7 @@ import CognitiveBiases from './widgets/cognitivebiases'; //look at the list of c
 import TwitterChatter from './widgets/twitterchatter'; //see what people are saying on twitter about the $brand
 import SearchTrends from './widgets/searchtrends'; //see how competitors are doing on search trends
 import Innovations from './widgets/innovations'; //search SpringWise for innovations on the $topic
+import OurWorldInData from './widgets/ourworldindata'; //search for $topic in OurWorldInData
 
 //n-gram?
 // spotify or youtube playlist?
@@ -69,6 +70,8 @@ class Suggestions extends React.Component {
       { name: 'SearchTrends', propKey: 'competitors', isMult: false },
 
       { name: 'Innovations', propKey: 'keywords', isMult: true },
+
+      { name: 'OurWorldInData', propKey: 'keywords', isMult: true },
 
       { name: 'Interview', propKey: 'brand', isMult: false }
 
@@ -163,6 +166,10 @@ class Suggestions extends React.Component {
 
       case 'Innovations':
         return (<Innovations topic={sug.val}/>)
+        break;
+
+      case 'OurWorldInData':
+        return (<OurWorldInData topic={sug.val}/>)
         break;
 
     }
